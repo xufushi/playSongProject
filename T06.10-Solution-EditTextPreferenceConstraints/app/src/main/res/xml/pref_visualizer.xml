@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="KEY_SHOW_BASS"
+        android:summaryOff="Hidden"
+        android:summaryOn="Shown"
+        android:title="Show Bass" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="KEY_SHOW_MID_RANGE"
+        android:summaryOff="Hidden"
+        android:summaryOn="Shown"
+        android:title="Show Mid Range" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="KEY_SHOW_TREBLE"
+        android:summaryOff="Hidden"
+        android:summaryOn="Shown"
+        android:title="Show Treble" />
+
+    <ListPreference
+        android:defaultValue="red"
+        android:entries="@array/pref_color_option_labels"
+        android:entryValues="@array/pref_color_option_values"
+        android:key="KEY_COLOR"
+        android:title="Shape Color" />
+    <EditTextPreference
+        android:defaultValue="1"
+        android:key="KEY_SIZE"
+        android:title="Show Multiplier" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="KEY_PLAY_SONG"
+        android:summaryOn="on"
+        android:summaryOff="off"
+        android:title="Play song" />
+
+</PreferenceScreen>
